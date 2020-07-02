@@ -1,1 +1,16 @@
-
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: prajyotdockerehelloworld 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: prajyotdockerehelloworld 
+    spec:
+      containers:
+        - name: prajyotdockerehelloworld 
+          image: acrrepo0613.azurecr.io/prajyotdockerehelloworld
+          ports:
+          - containerPort: 5000
