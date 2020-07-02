@@ -8,9 +8,6 @@ trigger:
 resources:
 - repo: self
 
-parameters:
- - name: myString
-   type: string
 
 variables:
 
